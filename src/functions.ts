@@ -1,4 +1,4 @@
-function add(n1: number, n2: number) {
+function add3(n1: number, n2: number) {
   return n1 + n2;
 }
 
@@ -11,11 +11,11 @@ function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
   cb(result);
 }
 
-printResult(add(20, 52));
+printResult(add3(20, 52));
 
 let combineValues: (a: number, b: number) => number;
 
-combineValues = add;
+combineValues = add3;
 // combineValues = printResult; // This will give an error, given that the function does not match with the function type
 // combineValues = 5; // this will give an error, given that it is not a function;
 

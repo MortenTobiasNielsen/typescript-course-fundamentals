@@ -1,9 +1,9 @@
-type Combinable = number | string; // Example of a custom type
+type Combinable2 = number | string; // Example of a custom type
 type ConversionDescriptor = "as-number" | "as-text";
 
 function combine(
-  input1: Combinable,
-  input2: Combinable,
+  input1: Combinable2,
+  input2: Combinable2,
   resultConversion: ConversionDescriptor // Ensures that it is a string and only those two values
 ) {
   let result;
